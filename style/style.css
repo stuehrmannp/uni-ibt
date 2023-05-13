@@ -1,22 +1,73 @@
+/*assignment of variables*/
+:root {
+    --minimalHeight: 10em;
+    --akzentrahmen: solid
+  }
+
+/*normal body*/
+
 body {
-    width: 960px;
-    margin: 0 auto;
-    border: 1px solid black;
+    /*width: 50em; /*besser als Pixel festzulegen*/
+    display: grid;
+    gap: 0.5em;
+    margin: 1em auto;
+    border: 0.1em solid black;
+    
 }
 
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+/*special action for the body on displays with more than 30em width*/
 
+@media (min-width: 30em){ 
+    /* mehrspaltiges Layout für breitere Bildschirme */ 
+    body {
+    /*width: 50em; /*besser als Pixel festzulegen*/
+    margin: 1 auto;
+    border: 0.1em solid black;
+    max-width: 60em;
+    grid-template-columns: 1fr 3fr;
+	grid-template-rows: auto 1fr 100px;
+    }
+  }
+
+/*header and footer take the full grid width on the page*/
+
+header, footer {
+	grid-column: 1 / -1;
+}
+
+/*style of the header part*/
+
+header {
+    align-items: center;
+    /*justify-content: space-between;*/
+    
+	display: grid;
+	grid-template-columns: 1fr 1fr;
 }
 
 header img {
-    width: 150px;
+    width: 9em;
     height: auto;
     
 }
 
 header p {
-    margin-right: 20px;
+    margin-right: 3em;
+    text-align: right;
+}
+
+/*style of the aside*/
+
+aside {
+    min-height: var(--minimalHeight);
+    /*color only for styling - will be filled with a picture*/
+	background: #34eb67;
+}
+
+/*style of the main*/
+
+main {
+    min-height: var(--minimalHeight);
+    /*color only for styling - will be filled with a picture*/
+	background: #eb9834;
 }
