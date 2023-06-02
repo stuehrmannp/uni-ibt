@@ -7,12 +7,15 @@
 /*normal body*/
 
 body {
-    /*width: 50em; /*besser als Pixel festzulegen*/
     display: grid;
-    gap: 0.5em;
+    grid-template-columns: repeat(3, 1fr); /* 3 Spalten */
+    grid-template-rows: repeat(4, 1fr); /* 3 Zeilen */
+    gap: 0.5em;  /* Abstand zwischen den Elementen */
     margin: 1em auto;
     border: 0.1em solid black;
-    
+
+    justify-content: center; /* Optional: um das Bild horizontal auszurichten */
+    align-items: center;
 }
 
 /*special action for the body on displays with more than 30em width*/
@@ -29,11 +32,7 @@ body {
     }
   }
 
-/*header and footer take the full grid width on the page*/
 
-header, footer {
-	grid-column: 1 / -1;
-}
 
 /*style of the header part*/
 
@@ -42,34 +41,24 @@ header {
     /*justify-content: space-between;*/
     
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	/*grid-template-columns: 1fr 1fr;*/
+
+    grid-column: 1 / 4; /* ganze Spalte */
+    grid-row: 1 / 2; /* Erste Zeile */
+
+    border-bottom: 1px solid black; /* Trennstrich */
+    padding-bottom: 10px; /* optionaler Abstand zum Trennstrich */
 }
 
 header img {
     width: 9em;
     height: auto;
-    
+    margin-top: 0.5em;
 }
 
 header p {
     margin-right: 3em;
     text-align: right;
-}
-
-/*style of the aside*/
-
-aside {
-    min-height: var(--minimalHeight);
-    /*color only for styling - will be filled with a picture*/
-	background: #34eb67;
-}
-
-/*style of the main*/
-
-main {
-    min-height: var(--minimalHeight);
-    /*color only for styling - will be filled with a picture*/
-	background: #eb9834;
 }
 
  /* Rectangle*/
@@ -89,4 +78,73 @@ main {
     mix-blend-mode: hard-light;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
+}
+
+.text1 {
+    min-height: var(--minimalHeight);
+
+    display: grid;
+
+    grid-column: 1 / 4; 
+    grid-row: 2 / 3; 
+
+    min-height: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    max-width: 50em;
+}
+
+.div1 {
+    display: grid;
+
+    grid-column: 1 / 2; 
+    grid-row: 3 / 4; 
+
+    min-height: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    max-width: 14em;
+}
+
+.div2 {
+    display: grid;
+
+    grid-column: 2 / 3; 
+    grid-row: 3 / 4; 
+
+    min-height: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    max-width: 14em;
+}
+
+.div3 {
+    display: grid;
+
+    grid-column: 3 / 4; 
+    grid-row: 3 / 4; 
+
+    min-height: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    max-width: 14em;
+
+    background-color: #7fe6d729;
+    height: 100%;
+    width: 100%;
+
+    
+}
+
+/*footer take the full grid width on the page*/
+footer {
+	grid-column: 1 / 4;
+    grid-row: 4 / 5; 
 }
