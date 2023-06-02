@@ -145,6 +145,18 @@ header p {
     grid-row: 3 / 4; 
 }
 
+.background {
+
+    grid-column: 1 / 4; 
+    grid-row: 3 / 4; 
+
+    background-image: url("../source/StaionHintergrund.jpg");
+    opacity: 0.5; /* Verblassen des Bildes auf 50% */
+
+    height: 100%;
+    width: 100%;
+}
+
 /*footer take the full grid width on the page*/
 footer {
 	grid-column: 1 / 4;
