@@ -9,7 +9,9 @@
 body {
     display: grid;
     grid-template-columns: 2fr 0.5fr 0.5fr; /* 3 Spalten */
+    grid-template-columns: 2fr 0.5fr 0.5fr; /* 3 Spalten */
     grid-template-rows: repeat(4, 1fr); /* 3 Zeilen */
+    gap: 0.1em;  /* Abstand zwischen den Elementen */
     gap: 0.1em;  /* Abstand zwischen den Elementen */
     margin: 1em auto;
     border: 0.1em solid black;
