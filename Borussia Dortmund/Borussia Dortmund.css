@@ -1,12 +1,12 @@
-.e1_2 {
+.Hintergrund_Groesse {
     background-color:rgba(255, 255, 255, 1);
-    width:1440px;
-    height:1024px;
+    width:1920px;
+    height:1080px;
     position:absolute;
 }
-.e11_20 {
-    width:1450px;
-    height:1265px;
+.Main_Hintergrund {
+    width:1920px;
+    height:1080px;
     position:absolute;
     left:0px;
     top:0px;
@@ -15,8 +15,8 @@
     background-size:cover;
 }
 .e3_18 {
-    width:709px;
-    height:1024px;
+    width:780px;
+    height:1090px;
     position:absolute;
     left:336px;
     top:0px;
@@ -24,9 +24,9 @@
     background-repeat:no-repeat;
     background-size:cover;
 }
-.e2_7 {
+.Header_Gelb {
     background-color:rgba(253.0000001192093, 225.00000178813934, 0, 1);
-    width:1440px;
+    width:1920px;
     height:118px;
     position:absolute;
     left:0px;
@@ -149,7 +149,7 @@
     left:0px;
     top:0px;
 }
-.e11_24 {
+.Preise_anzeigen {
     color:rgba(0, 0, 0, 1);
     width:380px;
     height:96px;
