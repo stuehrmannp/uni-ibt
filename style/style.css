@@ -7,10 +7,8 @@
 /*normal body*/
 
 body {
-    box-sizing: border-box;
-
     display: grid;
-    grid-template-columns: 1fr 2fr 2fr;; /* 3 Spalten */
+    grid-template-columns: 2fr 0.5fr 0.5fr; /* 3 Spalten */
     grid-template-rows: repeat(4, 1fr); /* 3 Zeilen */
     gap: 0.1em;  /* Abstand zwischen den Elementen */
     margin: 1em auto;
@@ -33,8 +31,6 @@ body {
 	grid-template-rows: auto 1fr 100px;
     }
   }
-
-
 
 /*style of the header part*/
 
@@ -119,13 +115,16 @@ header p {
 
     min-height: 2em;
     margin-left: auto;
-    margin-right: 1em;
+    margin-right: auto;
     margin-top: auto;
     margin-bottom: auto;
+
+    text-align: center; /* Zentriert den Inhalt horizontal */
 }
 
 .div1 input[type="text"] {
     margin-top: 1em;
+    align-self: center;
 }
 
 .div1 input[type="button"] {
