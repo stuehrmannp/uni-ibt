@@ -7,8 +7,10 @@
 /*normal body*/
 
 body {
+    box-sizing: border-box;
+
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 Spalten */
+    grid-template-columns: 1fr 2fr 2fr;; /* 3 Spalten */
     grid-template-rows: repeat(4, 1fr); /* 3 Zeilen */
     gap: 0.5em;  /* Abstand zwischen den Elementen */
     margin: 1em auto;
@@ -20,7 +22,7 @@ body {
 
 /*special action for the body on displays with more than 30em width*/
 
-@media (min-width: 30em){ 
+@media (min-width: 480px){ 
     /* mehrspaltiges Layout für breitere Bildschirme */ 
     body {
     /*width: 50em; /*besser als Pixel festzulegen*/
@@ -95,6 +97,20 @@ header p {
     max-width: 50em;
 }
 
+.div1,
+.div2,
+.div3 {
+    box-sizing: border-box;
+
+    background-color: lightblue;
+    height: 100%;
+    width: 100%;
+
+    min-height: 2em;
+
+    justify-content: start;
+}
+
 .div1 {
     display: grid;
 
@@ -103,24 +119,17 @@ header p {
 
     min-height: 2em;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: 1em;
     margin-top: auto;
     margin-bottom: auto;
-    max-width: 14em;
 }
+
 
 .div2 {
     display: grid;
 
     grid-column: 2 / 3; 
     grid-row: 3 / 4; 
-
-    min-height: 2em;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
-    margin-bottom: auto;
-    max-width: 14em;
 }
 
 .div3 {
@@ -128,19 +137,6 @@ header p {
 
     grid-column: 3 / 4; 
     grid-row: 3 / 4; 
-
-    min-height: 2em;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
-    margin-bottom: auto;
-    max-width: 14em;
-
-    background-color: #7fe6d729;
-    height: 100%;
-    width: 100%;
-
-    
 }
 
 /*footer take the full grid width on the page*/
