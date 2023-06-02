@@ -124,6 +124,13 @@ header p {
     margin-bottom: auto;
 }
 
+.div1 input[type="text"] {
+    margin-top: 1em;
+}
+
+.div1 input[type="button"] {
+    margin-top: 1em;
+}
 
 .div2 {
     display: grid;
