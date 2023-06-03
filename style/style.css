@@ -9,30 +9,16 @@
 body {
     display: grid;
     grid-template-columns: 2fr 0.5fr 0.5fr; /* 3 Spalten */
-    grid-template-columns: 2fr 0.5fr 0.5fr; /* 3 Spalten */
-    grid-template-rows: repeat(4, 1fr); /* 3 Zeilen */
-    gap: 0.1em;  /* Abstand zwischen den Elementen */
+
     gap: 0.1em;  /* Abstand zwischen den Elementen */
     margin: 1em auto;
     border: 0.1em solid black;
 
     justify-content: center; /* Optional: um das Bild horizontal auszurichten */
     align-items: center;
+
+    max-width: 1080px;
 }
-
-/*special action for the body on displays with more than 30em width*/
-
-@media (min-width: 480px){ 
-    /* mehrspaltiges Layout für breitere Bildschirme */ 
-    body {
-    /*width: 50em; /*besser als Pixel festzulegen*/
-    margin: 1 auto;
-    border: 0.1em solid black;
-    max-width: 60em;
-    grid-template-columns: 1fr 3fr;
-	grid-template-rows: auto 1fr 100px;
-    }
-  }
 
 /*style of the header part*/
 
@@ -61,25 +47,6 @@ header p {
     text-align: right;
 }
 
- /* Rectangle*/
-
-.box {
-    display: grid;
-
-    min-height: 2em;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 1em;
-    max-width: 14em;
-
-    text-align: center;
-
-    background: #D9D9D9;
-    mix-blend-mode: hard-light;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
-}
-
 .text1 {
     min-height: var(--minimalHeight);
 
@@ -95,69 +62,29 @@ header p {
     max-width: 50em;
 }
 
-.div1,
-.div2,
-.div3 {
-    box-sizing: border-box;
-
-    background-color: lightblue;
-    height: 100%;
-    width: 100%;
-
-    min-height: 2em;
-
-    justify-content: start;
-}
-
-.div1 {
-    display: grid;
-
-    grid-column: 1 / 2; 
-    grid-row: 3 / 4; 
-
-    min-height: 2em;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
-    margin-bottom: auto;
-
-    text-align: center; /* Zentriert den Inhalt horizontal */
-}
-
-.div1 input[type="text"] {
-    margin-top: 1em;
-    align-self: center;
-}
-
-.div1 input[type="button"] {
-    margin-top: 1em;
-}
-
-.div2 {
-    display: grid;
-
-    grid-column: 2 / 3; 
-    grid-row: 3 / 4; 
-}
-
-.div3 {
-    display: grid;
-
-    grid-column: 3 / 4; 
-    grid-row: 3 / 4; 
-}
-
-.background {
+.parent {
+    display: flex;
 
     grid-column: 1 / 4; 
-    grid-row: 3 / 4; 
 
     background-image: url("../source/StaionHintergrund.jpg");
-    opacity: 0.5; /* Verblassen des Bildes auf 50% */
+    opacity: 0.75; /* Verblassen des Bildes auf 50% */
 
     height: 100%;
     width: 100%;
-}
+    
+    min-height: 50em;
+  }
+  
+.flex-item {
+    flex: 1;
+    border: 1px solid rgba(0, 0, 0, 0.11);
+    padding: 10px;
+
+    text-align: center;
+
+    line-height: 1.5;
+  }
 
 /*footer take the full grid width on the page*/
 footer {
