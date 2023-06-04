@@ -6,25 +6,59 @@
     <meta name="description" content="Figma htmlGenerator">
     <meta name="author" content="htmlGenerator">
     <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="Borussia Dortmund.css">
 </head>
 <body>
-<div class=e1_2><div  class="e11_20"></div>
-    <div  class="e3_18"></div><div  class="e2_7"></div>
-    <span  class="e1_4">Borussia Dortmund</span>
+<div class=Hintergrund_Groesse></div>
+
+<picture  class="Main_Hintergrund"></picture>
+    <picture  class="Suedtribuene"></picture>
+    <div  class="Header_Gelb"></div>
+    <h1  class="H1_Borussia_Dortmund">Borussia Dortmund</h1>
     <div  class="e1_5"></div>
     <div  class="e2_9"></div>
     <div  class="e2_10"></div>
     <div  class="e2_11"></div>
-    <span  class="Tabellenpltz">Tabellenplatz </span>
+    <h2  class="Tabellenplatz">Tabellenplatz</h2>
     <div  class="e2_13"></div>
-    <div  class="e2_14"></div>
+    <picture  class="StadionBild"></picture>
     <div  class="e3_15"></div>
+
+    <div class=Preise_Box>
+        <div class="Preise_Hintergrund"></div>
+        <span class="Preise_anzeigen">Preise</span>
+    </div>
+
+    <div>
+        <button  id="essenButton" class="Speisen">Speisen</button>
+            <ul id="essenListe">
+            <li>Pizza</li>
+            <li>Burger</li>
+            <li>Sushi</li>
+            <li>Pasta</li>
+        </ul>
+        <script src="Borussia Dortmund.js"></script>
+    </div>
+
     <div  class="Getränke_Hintergrund"></div>
     <span  class="Getränke">Getränke</span>
-    <div class=Preise_Box><div  class="Preise_Hintergrund"></div>
-        <span  class="e11_24">Preise</span>
+
+    <div>
+        <button  id="getraenkeBtn" class="Getränke" onclick="showList('getraenkeList')">Getränke</button>
+            <ul id="getraenkeList" class="hidden">
+                <li>Pizza</li>
+                <li>Burger</li>
+                <li>Sushi</li>
+                <li>Pasta</li>
+            </ul>
+        <script src="Borussia Dortmund.js"></script>
     </div>
-</div>
+
+    <footer>
+        Dies ist das Ende der Website
+    </footer>
+</body>
+<body>
+
 </body>
 </html>
