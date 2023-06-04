@@ -1,8 +1,8 @@
-document.getElementById("essenButton").addEventListener("click", function() {
-    var essenListe = document.getElementById("essenListe");
-    if (essenListe.style.display === "none") {
-        essenListe.style.display = "block";
+function showList(listId) {
+    var list = document.getElementById(listId);
+    if (list.classList.contains("hidden")) {
+        list.classList.remove("hidden");
     } else {
-        essenListe.style.display = "none";
+        list.classList.add("hidden");
     }
-});
+}

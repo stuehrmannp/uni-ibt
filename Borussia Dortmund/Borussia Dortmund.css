@@ -14,7 +14,7 @@
     background-repeat:no-repeat;
     background-size:cover;
 }
-.e3_18 {
+.Suedtribuene {
     width:780px;
     height:1090px;
     position:absolute;
@@ -32,13 +32,13 @@
     left:0px;
     top:123px;
 }
-.e1_4 {
+.H1_Borussia_Dortmund {
     color:rgba(0, 0, 0, 1);
     width:1440px;
-    height:118px;
+    height:130px;
     position:absolute;
     left:0px;
-    top:123px;
+    top:60px;
     font-family:Inter;
     text-align:left;
     font-size:96px;
@@ -82,7 +82,7 @@
     height:63px;
     position:absolute;
     left:1003px;
-    top:331px;
+    top:300px;
     font-family:Inter;
     text-align:left;
     font-size:40px;
@@ -96,7 +96,7 @@
     left:867px;
     top:634px;
 }
-.e2_14 {
+.StadionBild {
     width:521px;
     height:278px;
     position:absolute;
@@ -113,6 +113,18 @@
     position:absolute;
     left:45px;
     top:518px;
+}
+.Speisen{
+    color:rgba(0, 0, 0, 1);
+    width:381px;
+    height:90px;
+    position:absolute;
+    left:46px;
+    top:518px;
+    font-family:Inter;
+    text-align:center;
+    font-size:50px;
+    letter-spacing:0;
 }
 .Getränke_Hintergrund {
     background-color:rgba(253.0000001192093, 225.00000178813934, 0, 0.75);
@@ -161,3 +173,9 @@
     font-size:50px;
     letter-spacing:0;
 }
+.hidden {
+    display: none;
+    top: 500px;
+    left: 2px;
+}
+
