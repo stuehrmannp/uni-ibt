@@ -11,7 +11,7 @@ body {
 
     gap: 0em;  /* Abstand zwischen den Elementen */
     margin: 1em auto;
-    border: 0.1em solid black;
+    border: 0em solid black;
 
     justify-content: center; /* Optional: um das Bild horizontal auszurichten */
     align-items: center;
@@ -34,6 +34,7 @@ header img {
     height: auto;
     margin-top: 0.5em;
     margin-left: 0.5em;
+    margin-bottom: 0.5em;
 }
 
 .header-text {
