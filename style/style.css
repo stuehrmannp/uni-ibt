@@ -34,6 +34,8 @@ header {
 
     border-bottom: 1px solid black; /* Trennstrich */
     padding-bottom: 10px; /* optionaler Abstand zum Trennstrich */
+
+    background-color: rgb(129, 171, 202); 
 }
 
 header img {
@@ -60,30 +62,55 @@ header p {
     margin-right: auto;
     margin-top: 1em;
     max-width: 50em;
+
+    background-color: rgb(2, 55, 178); 
+
+    height: 100%;
+    width: 100%;
 }
 
-.parent {
+.flex-container {
+    background-image: url("../source/StaionHintergrund.jpg");
+    opacity: 1; /* Verblassen des Bildes auf 50% */
+
     display: flex;
 
     grid-column: 1 / 4; 
-
-    background-image: url("../source/StaionHintergrund.jpg");
-    opacity: 0.75; /* Verblassen des Bildes auf 50% */
 
     height: 100%;
     width: 100%;
     
     min-height: 50em;
+
+    flex-direction: column;
+}
+
+.parent {
+    display: flex; 
   }
+
+.flex-item-text {
+    flex-grow: 1;
+    flex-basis: 100%;
+
+    text-align: center;
+
+    color: rgb(255, 255, 255);
+}
   
 .flex-item {
     flex: 1;
-    border: 1px solid rgba(0, 0, 0, 0.11);
+    border: 1px solid rgba(0, 0, 0, 0.2);
     padding: 10px;
 
     text-align: center;
 
     line-height: 1.5;
+  }
+
+  .flex-item p {
+    color: rgb(255, 255, 255);
+    background-color: rgba(26, 26, 26, 0.4); /* Hintergrundfarbe mit Transparenz (50%) */
   }
 
 /*footer take the full grid width on the page*/
