@@ -2,31 +2,27 @@
 :root {
     --minimalHeight: 10em;
     --akzentrahmen: solid
-  }
-
-/*normal body*/
+}
 
 body {
     display: flex;
 
-    gap: 0em;  /* Abstand zwischen den Elementen */
+    gap: 0em;
     margin: 1em auto;
     border: 0em solid black;
 
-    justify-content: center; /* Optional: um das Bild horizontal auszurichten */
+    justify-content: center;
     align-items: center;
 
     max-width: 1080px;
 }
-
-/*style of the header part*/
 
 header {
     display: flex;
 
     align-items: center;
 
-    background-color: rgb(129, 171, 202); 
+    background-color: rgb(129, 171, 202);
 }
 
 header img {
@@ -42,24 +38,26 @@ header img {
 }
 
 .flex-container {
-position: relative;
+    position: relative;
 
     background-image: url("../source/StaionHintergrund.jpg");
-    opacity: 1; /* Verblassen des Bildes auf 50% */
+    opacity: 1;
 
     display: flex;
 
     height: 100%;
     width: 100%;
-    
+
     min-height: 50em;
 
     flex-direction: column;
+
+    padding-bottom: 20px;
 }
 
 .parent {
-    display: flex; 
-  }
+    display: flex;
+}
 
 .flex-item-text {
     flex-grow: 1;
@@ -69,7 +67,7 @@ position: relative;
 
     color: rgb(255, 255, 255);
 }
-  
+
 .flex-item {
     flex: 1;
     border: 1px solid rgba(0, 0, 0, 0.2);
@@ -78,15 +76,24 @@ position: relative;
     text-align: center;
 
     line-height: 1.5;
-  }
+}
 
-  .flex-item p {
+.flex-item p {
     color: rgb(255, 255, 255);
-    background-color: rgba(26, 26, 26, 0.4); /* Hintergrundfarbe mit Transparenz (50%) */
-  }
+    background-color: rgba(26, 26, 26, 0.4);
+}
 
-/*footer take the full grid width on the page*/
 footer {
-	grid-column: 1 / 4;
-    grid-row: 4 / 5; 
+    display: flex;
+
+    align-items: center;
+
+    background-color: rgb(129, 171, 202);
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    color: rgb(255, 255, 255);
 }
