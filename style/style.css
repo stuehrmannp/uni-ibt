@@ -7,8 +7,7 @@
 /*normal body*/
 
 body {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr; /* 3 Spalten */
+    display: flex;
 
     gap: 0em;  /* Abstand zwischen den Elementen */
     margin: 1em auto;
@@ -23,17 +22,9 @@ body {
 /*style of the header part*/
 
 header {
+    display: flex;
+
     align-items: center;
-    /*justify-content: space-between;*/
-    
-	display: grid;
-	/*grid-template-columns: 1fr 1fr;*/
-
-    grid-column: 1 / 4; /* ganze Spalte */
-    grid-row: 1 / 2; /* Erste Zeile */
-
-    border-bottom: 1px solid black; /* Trennstrich */
-    padding-bottom: 10px; /* optionaler Abstand zum Trennstrich */
 
     background-color: rgb(129, 171, 202); 
 }
@@ -42,40 +33,20 @@ header img {
     width: 9em;
     height: auto;
     margin-top: 0.5em;
+    margin-left: 0.5em;
 }
 
-header p {
-    margin-right: 3em;
-    text-align: right;
-}
-
-.text1 {
-    min-height: var(--minimalHeight);
-
-    display: grid;
-
-    grid-column: 1 / 4; 
-    grid-row: 2 / 3; 
-
-    min-height: 2em;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 1em;
-    max-width: 50em;
-
-    background-color: rgb(2, 55, 178); 
-
-    height: 100%;
-    width: 100%;
+.header-text {
+    margin-left: 3em;
 }
 
 .flex-container {
+position: relative;
+
     background-image: url("../source/StaionHintergrund.jpg");
     opacity: 1; /* Verblassen des Bildes auf 50% */
 
     display: flex;
-
-    grid-column: 1 / 4; 
 
     height: 100%;
     width: 100%;
