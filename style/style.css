@@ -8,7 +8,7 @@
 
 body {
     display: grid;
-    grid-template-columns: 2fr 0.5fr 0.5fr; /* 3 Spalten */
+    grid-template-columns: 1fr 1fr 1fr; /* 3 Spalten */
 
     gap: 0em;  /* Abstand zwischen den Elementen */
     margin: 1em auto;
