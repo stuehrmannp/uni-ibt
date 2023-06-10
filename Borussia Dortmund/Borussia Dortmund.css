@@ -1,12 +1,12 @@
-.e1_2 {
+.Hintergrund_Groesse {
     background-color:rgba(255, 255, 255, 1);
-    width:1440px;
-    height:1024px;
+    width:1920px;
+    height:1080px;
     position:absolute;
 }
-.e11_20 {
-    width:1450px;
-    height:1265px;
+.Main_Hintergrund {
+    width:1920px;
+    height:1080px;
     position:absolute;
     left:0px;
     top:0px;
@@ -14,9 +14,9 @@
     background-repeat:no-repeat;
     background-size:cover;
 }
-.e3_18 {
-    width:709px;
-    height:1024px;
+.Suedtribuene {
+    width:780px;
+    height:1090px;
     position:absolute;
     left:336px;
     top:0px;
@@ -24,21 +24,21 @@
     background-repeat:no-repeat;
     background-size:cover;
 }
-.e2_7 {
+.Header_Gelb {
     background-color:rgba(253.0000001192093, 225.00000178813934, 0, 1);
-    width:1440px;
+    width:1920px;
     height:118px;
     position:absolute;
     left:0px;
     top:123px;
 }
-.e1_4 {
+.H1_Borussia_Dortmund {
     color:rgba(0, 0, 0, 1);
     width:1440px;
-    height:118px;
+    height:130px;
     position:absolute;
     left:0px;
-    top:123px;
+    top:60px;
     font-family:Inter;
     text-align:left;
     font-size:96px;
@@ -82,7 +82,7 @@
     height:63px;
     position:absolute;
     left:1003px;
-    top:331px;
+    top:300px;
     font-family:Inter;
     text-align:left;
     font-size:40px;
@@ -96,7 +96,7 @@
     left:867px;
     top:634px;
 }
-.e2_14 {
+.StadionBild {
     width:521px;
     height:278px;
     position:absolute;
@@ -113,6 +113,18 @@
     position:absolute;
     left:45px;
     top:518px;
+}
+.Speisen{
+    color:rgba(0, 0, 0, 1);
+    width:381px;
+    height:90px;
+    position:absolute;
+    left:46px;
+    top:518px;
+    font-family:Inter;
+    text-align:center;
+    font-size:50px;
+    letter-spacing:0;
 }
 .Getränke_Hintergrund {
     background-color:rgba(253.0000001192093, 225.00000178813934, 0, 0.75);
@@ -149,7 +161,7 @@
     left:0px;
     top:0px;
 }
-.e11_24 {
+.Preise_anzeigen {
     color:rgba(0, 0, 0, 1);
     width:380px;
     height:96px;
@@ -161,3 +173,9 @@
     font-size:50px;
     letter-spacing:0;
 }
+.hidden {
+    display: none;
+    top: 500px;
+    left: 2px;
+}
+
