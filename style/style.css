@@ -1,22 +1,103 @@
+/*assignment of variables*/
+:root {
+    --minimalHeight: 10em;
+    --akzentrahmen: solid
+}
+
 body {
-    width: 960px;
-    margin: 0 auto;
-    border: 1px solid black;
+    display: flex;
+
+    gap: 0em;
+    margin: 1em auto;
+    border: 0em solid black;
+
+    justify-content: center;
+    align-items: center;
+
+    max-width: 1080px;
 }
 
 header {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
 
+    align-items: center;
+
+    background-color: rgb(129, 171, 202);
 }
 
 header img {
-    width: 150px;
+    width: 9em;
     height: auto;
-    
+    margin-top: 0.5em;
+    margin-left: 0.5em;
+    margin-bottom: 0.5em;
 }
 
-header p {
-    margin-right: 20px;
+.header-text {
+    margin-left: 3em;
+}
+
+.flex-container {
+    position: relative;
+
+    background-image: url("../source/StaionHintergrund.jpg");
+    opacity: 1;
+
+    display: flex;
+
+    height: 100%;
+    width: 100%;
+
+    min-height: 50em;
+
+    flex-direction: column;
+
+    padding-bottom: 20px;
+}
+
+.parent {
+    display: flex;
+}
+
+.flex-item-text {
+    flex-grow: 1;
+    flex-basis: 100%;
+
+    text-align: center;
+
+    color: rgb(255, 255, 255);
+}
+
+.flex-item {
+    flex: 1;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 10px;
+
+    text-align: center;
+
+    line-height: 1.5;
+}
+
+.flex-item p {
+    color: rgb(255, 255, 255);
+    background-color: rgba(26, 26, 26, 0.4);
+}
+
+footer {
+    display: flex;
+
+    align-items: center;
+
+    background-color: rgb(129, 171, 202);
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    color: rgb(255, 255, 255);
+}
+
+footer p {
+    margin-left: 1em;
 }

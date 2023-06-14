@@ -1,0 +1,181 @@
+.Hintergrund_Groesse {
+    background-color:rgba(255, 255, 255, 1);
+    width:1920px;
+    height:1080px;
+    position:absolute;
+}
+.Main_Hintergrund {
+    width:1920px;
+    height:1080px;
+    position:absolute;
+    left:0px;
+    top:0px;
+    background-image:url(images/main_hintergrund.png);
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+.Suedtribuene {
+    width:780px;
+    height:1090px;
+    position:absolute;
+    left:336px;
+    top:0px;
+    background-image:url(images/middle_hintergrund.png);
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+.Header_Gelb {
+    background-color:rgba(253.0000001192093, 225.00000178813934, 0, 1);
+    width:1920px;
+    height:118px;
+    position:absolute;
+    left:0px;
+    top:123px;
+}
+.H1_Borussia_Dortmund {
+    color:rgba(0, 0, 0, 1);
+    width:1440px;
+    height:130px;
+    position:absolute;
+    left:0px;
+    top:60px;
+    font-family:Inter;
+    text-align:left;
+    font-size:96px;
+    letter-spacing:0;
+}
+.e1_5 {
+    background-color:rgba(253.0000001192093, 225.00000178813934, 0, 0.75);
+    width:415px;
+    height:483px;
+    position:absolute;
+    left:30px;
+    top:298px;
+}
+.e2_9 {
+    background-color:rgba(0, 0, 0, 1);
+    width:560px;
+    height:275px;
+    position:absolute;
+    left:865px;
+    top:305px;
+}
+.e2_10 {
+    background-color:rgba(253.0000001192093, 225.00000178813934, 0, 1);
+    width:520px;
+    height:63px;
+    position:absolute;
+    left:885px;
+    top:331px;
+}
+.e2_11 {
+    background-color:rgba(255, 255, 255, 1);
+    width:516px;
+    height:154px;
+    position:absolute;
+    left:889px;
+    top:409px;
+}
+.Tabellenplatz {
+    color:rgba(0, 0, 0, 1);
+    width:284px;
+    height:63px;
+    position:absolute;
+    left:1003px;
+    top:300px;
+    font-family:Inter;
+    text-align:left;
+    font-size:40px;
+    letter-spacing:0;
+}
+.e2_13 {
+    background-color:rgba(217.0000022649765, 217.0000022649765, 217.0000022649765, 1);
+    width:558px;
+    height:312px;
+    position:absolute;
+    left:867px;
+    top:634px;
+}
+.StadionBild {
+    width:521px;
+    height:278px;
+    position:absolute;
+    left:884px;
+    top:651px;
+    background-image:url(images/stadion_bild.png);
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+.e3_15 {
+    background-color:rgba(253.0000001192093, 225.00000178813934, 0, 0.75);
+    width:382px;
+    height:89px;
+    position:absolute;
+    left:45px;
+    top:518px;
+}
+.Speisen{
+    color:rgba(0, 0, 0, 1);
+    width:381px;
+    height:90px;
+    position:absolute;
+    left:46px;
+    top:518px;
+    font-family:Inter;
+    text-align:center;
+    font-size:50px;
+    letter-spacing:0;
+}
+.Getränke_Hintergrund {
+    background-color:rgba(253.0000001192093, 225.00000178813934, 0, 0.75);
+    width:382px;
+    height:89px;
+    position:absolute;
+    left:45px;
+    top:410px;
+}
+.Getränke {
+    color:rgba(0, 0, 0, 1);
+    width:381px;
+    height:90px;
+    position:absolute;
+    left:46px;
+    top:409px;
+    font-family:Inter;
+    text-align:center;
+    font-size:50px;
+    letter-spacing:0;
+}
+.Preise_Box {
+    width:382px;
+    height:96px;
+    position:absolute;
+    left:45px;
+    top:298px;
+}
+.Preise_Hintergrund {
+    background-color:rgba(253.0000001192093, 225.00000178813934, 0, 0.75);
+    width:382px;
+    height:96px;
+    position:absolute;
+    left:0px;
+    top:0px;
+}
+.Preise_anzeigen {
+    color:rgba(0, 0, 0, 1);
+    width:380px;
+    height:96px;
+    position:absolute;
+    left:2px;
+    top:0px;
+    font-family:Inter;
+    text-align:center;
+    font-size:50px;
+    letter-spacing:0;
+}
+.hidden {
+    display: none;
+    top: 500px;
+    left: 2px;
+}
+
