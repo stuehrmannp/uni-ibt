@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/style.css" type="text/css">
+    <script src="function.js"></script>
     <title>Bundesliga Wurst Index</title>
 </head>
 <body>
@@ -27,7 +28,14 @@
      <div class="parent">
             <div class="flex-item">
                 <p>Bitte Stadion eingeben: <br>
-                    <input type="text"> <input type="button" value="Suchen" />
+                    <input type="text"> <input type="button" value="Suchen" /> <br>
+                    <br>
+                    <p2>Schnellzugriff:</p2> <br>
+                    <button onclick="openPageBVB()" class="button-BVB">BVB</button>
+                    <br>
+                    <button onclick="openPageBayern()" class="button-Bayern">Bayern</button>
+                    <br>
+                    <button onclick="openPageS04()" class="button-S04">S04</button>
                 </p>
             </div>
             <div class="flex-item">
