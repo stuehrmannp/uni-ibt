@@ -2,9 +2,7 @@
 <html lang="de">
 <head>
     <meta charset="utf-8">
-    <title>Html Generated</title>
-    <meta name="description" content="Figma htmlGenerator">
-    <meta name="author" content="htmlGenerator">
+    <title>Borussia Dortmund</title>
     <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="Borussia Dortmund.css">
 </head>
@@ -17,16 +15,18 @@
 <div class="Header_Gelb"></div>
 <h1 class="H1_Borussia_Dortmund">Borussia Dortmund</h1>
 
-<!-- Button für vorherige Seite -->
-<button id="zurueckButton" class="Zurueck">Zurück</button>
+<button class="Zurueck" >
+    <a href="index.html">Zurück</a>
+</button>
 
-<div class="e1_5"></div>
-<div class="e2_9"></div>
-<div class="e2_10"></div>
-<div class="e2_11"></div>
+<div class="Speisenliste"></div>
 
+<div class="Tabellenplatz_Hintergrund"></div>
+<div class="Tabellenplatz_Header"></div>
+<div class="Tabellenplatz_Feld"></div>
 <h2 class="Tabellenplatz">Tabellenplatz</h2>
-<div class="e2_13"></div>
+
+<div class="Speisen_Hintergrund"></div>
 
 <picture class="StadionBild"></picture>
 <div class="e3_15"></div>
@@ -37,28 +37,24 @@
 </div>
 
 <div>
-    <button id="essenButton" class="Speisen">Speisen</button>
-    <ul id="essenListe">
-        <li>Pizza</li>
-        <li>Burger</li>
-        <li>Sushi</li>
-        <li>Pasta</li>
-    </ul>
-    <script src="Borussia Dortmund.js"></script>
+    <button id="essenButton" class="Speisen" onclick="toggleFoodList()">
+        <a href="BVB_Speisen.html">Speisen</a>
+    </button>
 </div>
 
 <div class="Getränke_Hintergrund"></div>
 <span class="Getränke">Getränke</span>
 
 <div>
-    <button id="getraenkeBtn" class="Getränke" onclick="showList('getraenkeList')">Getränke</button>
-    <ul id="getraenkeList" class="hidden">
-        <li>Pizza</li>
-        <li>Burger</li>
-        <li>Sushi</li>
-        <li>Pasta</li>
+    <button id="getraenkeBtn" class="Getränke" onclick="toggleDrinkList()">Getränke</button>
+    <ul id="getraenkeList" style="display: none;">
+        <li>Coca Cola</li>
+        <li>Sprite</li>
+        <li>Fanta</li>
+        <li>Wasser</li>
     </ul>
-    <script src="Borussia Dortmund.js"></script>
 </div>
+
+<script src="Borussia%20Dortmund.js"></script>
 </body>
 </html>

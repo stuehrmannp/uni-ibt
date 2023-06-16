@@ -1,22 +1,19 @@
-// script.js
-
-// Funktion zum Zurückgehen zur vorherigen Seite
-function goBack() {
-    window.history.back();
-}
-
-// Funktion zum Anzeigen/Verstecken der Essensliste
+// Funktion zum Umschalten der Speisenliste
 function toggleFoodList() {
-    var foodList = document.getElementById('essenListe');
-    if (foodList.style.display === 'none') {
-        foodList.style.display = 'block';
+    var essenListe = document.getElementById("essenListe");
+    if (essenListe.style.display === "none") {
+        essenListe.style.display = "block";
     } else {
-        foodList.style.display = 'none';
+        essenListe.style.display = "none";
     }
 }
 
-// Funktion zum Anzeigen/Verstecken der Getränkeliste
-function showList(listId) {
-    var list = document.getElementById(listId);
-    list.classList.toggle('hidden');
+// Funktion zum Umschalten der Getränkeliste
+function toggleDrinkList() {
+    var getraenkeList = document.getElementById("getraenkeList");
+    if (getraenkeList.style.display === "none") {
+        getraenkeList.style.display = "block";
+    } else {
+        getraenkeList.style.display = "none";
+    }
 }
