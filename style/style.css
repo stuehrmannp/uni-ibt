@@ -59,6 +59,32 @@ header img {
     display: flex;
 }
 
+.search-item {
+    align-items: center;
+    margin-top: 1em;
+}
+
+#search-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 13em;
+}
+
+#search-btn {
+    padding: 10px;
+    background-color: #585f66;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#search-btn:hover {
+    opacity: 0.8;
+}
+
 .flex-item-text {
     flex-grow: 1;
     flex-basis: 100%;
@@ -91,7 +117,7 @@ header img {
 
     color: #ffffff;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    padding: 10px 20px;
+    padding: 10px;
     border: none;
     border-radius: 4px;
     min-width: 7em;
@@ -105,7 +131,7 @@ header img {
 }
 
 .button-BVB:hover {
-  opacity: 0.8;
+    opacity: 0.8;
 }
 
 .button-Bayern {
@@ -113,7 +139,7 @@ header img {
 }
 
 .button-Bayern:hover {
-  opacity: 0.8;
+    opacity: 0.8;
 }
 
 .button-S04 {
@@ -121,7 +147,7 @@ header img {
 }
 
 .button-S04:hover {
-  opacity: 0.8;
+    opacity: 0.8;
 }
 
 footer {
