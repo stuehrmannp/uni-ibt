@@ -1,5 +1,7 @@
 .Hintergrund_Groesse {
-    background-color: rgba(255, 255, 255, 1);
+    background-color: rgb(255, 255, 255);
+    max-width: 1920px;
+    max-height: 1080px;
     width: 100%;
     height: 100%;
     position: absolute;
