@@ -16,7 +16,7 @@ body {
 
     max-width: 1080px;
 }
-
+/*style of header*/
 header {
     display: flex;
 
@@ -37,6 +37,7 @@ header img {
     margin-left: 3em;
 }
 
+/*parent flex object*/
 .flex-container {
     position: relative;
 
@@ -55,11 +56,13 @@ header img {
     padding-bottom: 20px;
 }
 
+/*parent flex object for table*/
 .parent {
     display: flex;
     background-color: rgba(26, 26, 26, 0.4);
+    font-family: Arial, Helvetica, sans-serif;
 }
-
+/*all about searchbar und button*/
 .search-item {
     align-items: center;
     margin-top: 1em;
@@ -82,10 +85,12 @@ header img {
     cursor: pointer;
 }
 
+/*special by hovering*/
 #search-btn:hover {
     opacity: 0.8;
 }
 
+/*text above the table - direct in parent*/
 .flex-item-text {
     flex-grow: 1;
     flex-basis: 100%;
@@ -95,9 +100,11 @@ header img {
     color: rgb(255, 255, 255);
 }
 
+/*parent for table*/
 .flex-item {
     flex: 1;
     border: 1px solid rgba(0, 0, 0, 0.2);
+    color: rgb(255, 255, 255);
     padding: 10px;
 
     text-align: center;
@@ -105,14 +112,17 @@ header img {
     line-height: 1.5;
 }
 
+/*heading in table*/
 .flex-item p {
     color: rgb(255, 255, 255);
 }
 
+/*heading in table*/
 .flex-item p2 {
     color: rgb(255, 255, 255);
 }
 
+/*main css for buttons - all the same basic config*/
 .vereinsbutton {
 
     color: #ffffff;
@@ -126,6 +136,7 @@ header img {
     transition: opacity 0.3s ease;
 }
 
+/*different colors for each button and opacity*/
 .button-BVB {
     background-color: #ffd700;
 }
@@ -150,6 +161,7 @@ header img {
     opacity: 0.8;
 }
 
+/*footer config*/
 footer {
     display: flex;
 
