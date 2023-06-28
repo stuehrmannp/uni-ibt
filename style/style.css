@@ -1,7 +1,8 @@
 /*assignment of variables*/
 :root {
     --minimalHeight: 10em;
-    --akzentrahmen: solid
+    --akzentrahmen: solid;
+    --logosize: 85px;
 }
 
 body {
@@ -131,6 +132,7 @@ header img {
     border: none;
     border-radius: 4px;
     min-width: 7em;
+    min-height: 7em;
 
     margin-top: 1em;
     transition: opacity 0.3s ease;
@@ -139,6 +141,11 @@ header img {
 /*different colors for each button and opacity*/
 .button-BVB {
     background-color: #ffd700;
+    background-image: url("../source/logo-bvb.jpg");
+    background-size: var(--logosize) var(--logosize);
+    border: #ffd700;
+    border: 5px solid;
+    color: #ffd700;
 }
 
 .button-BVB:hover {
@@ -147,6 +154,11 @@ header img {
 
 .button-Bayern {
     background-color: #ff0000;
+    background-image: url("../source/logo-bayern.jpg");
+    background-size: var(--logosize) var(--logosize);
+    border: #ff0000;
+    border: 5px solid;
+    color: #ff0000;
 }
 
 .button-Bayern:hover {
@@ -155,6 +167,11 @@ header img {
 
 .button-S04 {
     background-color: #002fff;
+    background-image: url("../source/logo-s04.jpg");
+    background-size: var(--logosize) var(--logosize);
+    border: #002fff;
+    border: 5px solid;
+    color: #002fff;
 }
 
 .button-S04:hover {
