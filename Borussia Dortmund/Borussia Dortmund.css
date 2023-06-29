@@ -160,7 +160,8 @@
     left: 75%;
     top: 93vh;
     position: absolute;
-    text-decoration: none;
+    text-decoration: none !important;
+    cursor: pointer;
 }
 
 .BVB_Logo {
