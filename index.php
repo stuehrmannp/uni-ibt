@@ -39,12 +39,22 @@
                 <form action="<?php echo $SERVER['PHP_SELF']; ?>" method="POST">
                     <label for="auswahl">Auswahl:</label>
                     <select name="auswahl" id="auswahl">
-                        <option value="borussia">Dortmund</option>
-                        <option value="frankfurt">Frankfurt</option>
-                        <option value="berlin">Berlin</option>
+                        <option value="dortmund">Borussia Dortmund</option>
+                        <option value="bayern">FC Bayern München</option>
+                        <option value="frankfurt">Eintracht Frankfurt</option>
                     </select>
-                    <input type="submit" value="Suche">
+                    <input type="submit" value="Suche" id="search-btn">
                 </form>   
+                <p2>Schnellzugriff:</p2> <br>
+                <button onclick="openPageBVB()" class="vereinsbutton button-BVB">BVB</button>
+                <br>
+                <button onclick="openPageBayern()" class="vereinsbutton button-Bayern">Bayern</button>
+                <br>
+                <button onclick="openPageS04()" class="vereinsbutton button-S04">S04</button>
+                </p>
+            </div>
+            <div class="flex-item">
+                <p> Übersicht über die verfügbaren Speisen und Preise:</p>
                 <?php
 
                                         // Verbindung zur Datenbank herstellen
@@ -52,6 +62,7 @@
                     $username = "tutorial";
                     $password = "test123";
                     $dbname = "web_app";
+                    $sql;
 
                     // Verbindung
                     $conn = new mysqli($servername, $username, $password, $dbname);
@@ -70,14 +81,23 @@
                         $result = $conn->query($sql);
 
                         if ($result->num_rows > 0) {
-                            // Verarbeitung der Abfrageergebnisse
+                            echo "<table id='table-stat'>";
+                            echo "<tr><th>Name</th><th>Kosten Stehplatz</th><th>Kosten Dauerkarte</th><th>Kosten Bier</th><th>Kosten Wurst</th></tr>";
                             while ($row = $result->fetch_assoc()) {
-                                echo "ID: " . $row["id"] . ", Name: " . $row["name"] . ", Plätze: " . $row["plaetze"] . "<br>";
+                                echo "<tr>";
+                                echo "<td>" . $row["name"] . "</td>";
+                                echo "<td>" . $row["preis_stehplatz"] . "€</td>";
+                                echo "<td>" . $row["preis_dauerkarte"] . "€</td>";
+                                echo "<td>" . $row["preis_bier"] . "€</td>";
+                                echo "<td>" . $row["preis_wurst"] . "€</td>";
+                                echo "</tr>";
                             }
+                            echo "</table>";
                         } else {
                             echo "Keine Ergebnisse gefunden.";
                         }
                     }
+                    
 
                     // Abfrage ausführen
                     // $sql = "SELECT * FROM stadien";
@@ -100,24 +120,46 @@
                     // }
 
                     // Verbindung schließen
-                    $conn->close();
+                    
 ?>
-
-                <!--- <p>Bitte Stadion eingeben: <br>
-                    <input type="text"> <input type="button" value="Suchen" /> -->
-                <p2>Schnellzugriff:</p2> <br>
-                <button onclick="openPageBVB()" class="vereinsbutton button-BVB">BVB</button>
-                <br>
-                <button onclick="openPageBayern()" class="vereinsbutton button-Bayern">Bayern</button>
-                <br>
-                <button onclick="openPageS04()" class="vereinsbutton button-S04">S04</button>
-                </p>
-            </div>
-            <div class="flex-item">
-                <p> Übersicht über die verfügbaren Speisen und Preise:</p>
             </div>
             <div class="flex-item">
                 <p> Aktuelle News und Statistiken zum Verein:</p>
+                <?php
+                        $auswahl2;
+                        if($auswahl == 'bayern') {
+                            $auswahl2 = 'punkte_bayern';
+                        } else if($auswahl == 'dortmund') {
+                            $auswahl2 = 'punkte_dortmund';
+                        } else if($auswahl == 'frankfurt') {
+                            $auswahl2 = 'punkte_frankfurt';
+                        }
+                        $sql2 = "SELECT * FROM $auswahl2";
+                        $result2 = $conn->query($sql2);
+            
+                        
+                        if ($result2->num_rows > 0) {
+                            echo "<table class='table_stat'>";
+                            echo "<tr><th>Platz</th><th>Spiele</th><th>Siege</th><th>Unentschieden</th><br /><th>Niederlagen</th><th>Tore</th><th>Gegentore</th><th>Punkte</th></tr>";
+                            while ($row2 = $result2->fetch_assoc()) {
+                                echo "<tr>";
+                                echo "<td>" . $row2["platz"] . "</td>";
+                                echo "<td>" . $row2["spiele"] . "</td>";
+                                echo "<td>" . $row2["siege"] . "</td>";
+                                echo "<td>" . $row2["unentschieden"] . "</td>";
+                                echo "<td>" . $row2["niederlagen"] . "</td>";
+                                echo "<td>" . $row2["tore"] . "</td>";
+                                echo "<td>" . $row2["gegentore"] . "</td>";
+                                echo "<td>" . $row2["punkte"] . "</td>";
+                                echo "</tr>";
+                            }
+                            echo "</table>";
+                        } else {
+                            echo "Keine Ergebnisse gefunden.";
+                        }
+                
+                    $conn->close();
+                ?>
             </div>
         </div>
         <footer>
