@@ -2,27 +2,40 @@
 :root {
     --minimalHeight: 10em;
     --akzentrahmen: solid
+    --logosize: 85px;
+}
+
+html {
+    height: 100%;
+    width: auto;
 }
 
 body {
     display: flex;
-
     gap: 0em;
     margin: 1em auto;
     border: 0em solid black;
-
+    background: 
+    linear-gradient(
+    rgba(0, 0, 0, .0),
+    rgba(0, 0, 0, 0.7)
+  ),
+    url("https://images.unsplash.com/photo-1556056504-5c7696c4c28d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=976&q=80");
+    background-size: cover;
+    background-position: left;
     justify-content: center;
     align-items: center;
-
+    height: 100%;
     max-width: 1080px;
 }
 /*style of header*/
 header {
     display: flex;
-
+    background-color: #242526;
     align-items: center;
+    font-family: Arial;
+    Color: white;
 
-    background-color: rgb(129, 171, 202);
 }
 
 header img {
@@ -54,14 +67,13 @@ header img {
 
     display: flex;
 
-    height: 100%;
     width: 100%;
 
-    min-height: 50em;
+    height: 100%;
 
     flex-direction: column;
 
-    padding-bottom: 20px;
+
 }
 
 /*parent flex object for table*/
@@ -139,6 +151,7 @@ header img {
     border: none;
     border-radius: 4px;
     min-width: 7em;
+    min-height: 7em;
 
     margin-top: 1em;
     transition: opacity 0.3s ease;
@@ -147,6 +160,14 @@ header img {
 /*different colors for each button and opacity*/
 .button-BVB {
     background-color: #ffd700;
+    background-image: url("../source/logo-bvb.jpg");
+    background-position: center;
+    background-size:cover;
+    border: #ffd700;
+    border: 5px solid;
+    color: #ffd700;
+
+    
 }
 
 .button-BVB:hover {
@@ -169,6 +190,10 @@ header img {
     opacity: 0.8;
 }
 
+form {
+    margin-bottom: 20px;
+}
+
 
 
 /*footer config*/
@@ -177,7 +202,8 @@ footer {
 
     align-items: center;
 
-    background-color: rgb(129, 171, 202);
+
+    background-color: #242526;
 
     position: absolute;
     bottom: 0;

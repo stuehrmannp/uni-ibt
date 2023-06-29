@@ -46,12 +46,8 @@
                     <input type="submit" value="Suche" id="search-btn">
                 </form>   
                 <p2>Schnellzugriff:</p2> <br>
-                <button onclick="openPageBVB()" class="vereinsbutton button-BVB">BVB</button>
-                <br>
-                <button onclick="openPageBayern()" class="vereinsbutton button-Bayern">Bayern</button>
-                <br>
-                <button onclick="openPageS04()" class="vereinsbutton button-S04">S04</button>
-                </p>
+                <button onclick="openPageBVB()" class="vereinsbutton button-BVB"></button>
+                
             </div>
             <div class="flex-item">
                 <p> Übersicht über die verfügbaren Speisen und Preise:</p>
