@@ -1,3 +1,8 @@
+.body {
+    max-width: 1920px;
+    max-height: 1080px;
+}
+
 .Hintergrund_Groesse {
     background-color: rgb(255, 255, 255);
     max-width: 1920px;
@@ -36,6 +41,7 @@
     position: absolute;
     left: 0px;
     top: 12vh;
+    z-index: 1;
 }
 
 .H1_Borussia_Dortmund {
@@ -43,13 +49,14 @@
     width: 90%;
     height: 12vh;
     position: absolute;
-    left: 5%;
-    top: 9%;
+    left: 2%;
+    top: 10%;
     transform: translateY(-5%);
-    font-family: Inter;
+    font-family: Arial;
     text-align: left;
     font-size: 6vh;
     letter-spacing: 0;
+    z-index: 2;
 }
 
 .Speisenliste {
@@ -58,7 +65,8 @@
     height: 45vh;
     position: absolute;
     left: 2%;
-    top: 30vh;
+    top: 28vh;
+    border-radius: 20px;
 }
 
 .Tabellenplatz_Hintergrund {
@@ -93,21 +101,12 @@
     width: 15%;
     height: 6vh;
     position: absolute;
-    left: 76%;
+    left: 78%;
     top: 30vh;
-    font-family: Inter;
+    font-family: Arial;
     text-align: left;
     font-size: 4vh;
     letter-spacing: 0;
-}
-
-.e2_13 {
-    background-color: rgba(217.0000022649765, 217.0000022649765, 217.0000022649765, 1);
-    width: 28%;
-    height: 35vh;
-    position: absolute;
-    left: 45%;
-    top: 58vh;
 }
 
 .StadionBild {
@@ -121,40 +120,13 @@
     background-size: cover;
 }
 
-
-.Speisen {
-    color: rgba(0, 0, 0, 1);
-    background-color: rgb(253.0000001192093, 225.00000178813934, 0);
-    width: 18%;
-    height: 8vh;
-    position: absolute;
-    left: 3%;
-    top: 52vh;
-    font-family: Inter;
-    text-align: center;
-    font-size: 4vh;
-    letter-spacing: 0;
-}
-.Getränke {
-    background-color: rgb(253.0000001192093, 225.00000178813934, 0);
-    color: rgba(0, 0, 0, 1);
-    width: 18%;
-    height: 8vh;
-    position: absolute;
-    left: 3%;
-    top: 42vh;
-    font-family: Inter;
-    text-align: center;
-    font-size: 4vh;
-    letter-spacing: 0;
-}
-
 .Preise_Box {
     width: 18%;
     height: 10vh;
     position: absolute;
     left: 2%;
     top: 30vh;
+    border-radius: 20px;
 }
 
 .Preise_Hintergrund {
@@ -164,26 +136,22 @@
     position: absolute;
     left: 5%;
     top: 0px;
+    border-radius: 20px;
 }
 
 .Preise_anzeigen {
     color: rgb(0, 0, 0);
     width: 100%;
-    height: 10vh;
+    height: 15vh;
     position: absolute;
     left: 1%;
-    top: 0px;
-    font-family: Inter;
+    top: 10px;
+    font-family: Arial;
     text-align: center;
-    font-size: 4vh;
+    font-size: 5vh;
     letter-spacing: 0;
 }
 
-.hidden {
-    display: none;
-    top: 50vh;
-    left: 1%;
-}
 .Zurueck {
     background-color: rgb(253.0000001192093, 225.00000178813934, 0);
     color: black;
@@ -192,4 +160,19 @@
     left: 75%;
     top: 93vh;
     position: absolute;
+    text-decoration: none !important;
+    cursor: pointer;
+}
+
+.BVB_Logo {
+    width: 10%;
+    height: 10%;
+    position: absolute;
+    top: 12%;
+    left: 1000px;
+    right: 100px;
+    background-image: url(images/BVB_Logo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 2;
 }
