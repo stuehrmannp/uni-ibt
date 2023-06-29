@@ -52,7 +52,7 @@
             <div class="flex-item">
                 <p> Übersicht über die verfügbaren Speisen und Preise:</p>
                 <?php
-
+                    
                                         // Verbindung zur Datenbank herstellen
                     $servername = "localhost";  // Anpassen, wenn deine Datenbank auf einem anderen Server läuft
                     $username = "tutorial";
