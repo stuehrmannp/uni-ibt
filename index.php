@@ -46,7 +46,7 @@
                     <input type="submit" value="Suche" id="search-btn">
                 </form>   
                 <p2>Schnellzugriff:</p2> <br>
-                <button onclick="openPageBVB()" class="vereinsbutton button-BVB">BVB</button>
+                <button onclick="openPageBVB()" class="vereinsbutton button-BVB"></button>
                 
             </div>
             <div class="flex-item">
