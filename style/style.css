@@ -225,6 +225,9 @@ header img {
     
 }
 
+.button-BVB:hover {
+    opacity: 0.8;
+}
 
 form {
     margin-bottom: 20px;
