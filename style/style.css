@@ -2,6 +2,7 @@
 :root {
     --minimalHeight: 10em;
     --akzentrahmen: solid
+    --logosize: 85px;
 }
 
 html {
@@ -17,7 +18,7 @@ body {
     background: 
     linear-gradient(
     rgba(0, 0, 0, .0),
-    rgba(0, 0, 0, 0.5)
+    rgba(0, 0, 0, 0.7)
   ),
     url("https://images.unsplash.com/photo-1556056504-5c7696c4c28d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=976&q=80");
     background-size: cover;
@@ -150,6 +151,7 @@ header img {
     border: none;
     border-radius: 4px;
     min-width: 7em;
+    min-height: 7em;
 
     margin-top: 1em;
     transition: opacity 0.3s ease;
@@ -158,6 +160,14 @@ header img {
 /*different colors for each button and opacity*/
 .button-BVB {
     background-color: #ffd700;
+    background-image: url("../source/logo-bvb.jpg");
+    background-position: center;
+    background-size:cover;
+    border: #ffd700;
+    border: 5px solid;
+    color: #ffd700;
+
+    
 }
 
 .button-BVB:hover {
@@ -178,6 +188,10 @@ header img {
 
 .button-S04:hover {
     opacity: 0.8;
+}
+
+form {
+    margin-bottom: 20px;
 }
 
 
