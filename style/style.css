@@ -37,11 +37,19 @@ header img {
     margin-left: 3em;
 }
 
+
 /*parent flex object*/
 .flex-container {
     position: relative;
 
-    background-image: url("../source/StaionHintergrund.jpg");
+    background: 
+    linear-gradient(
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.5)
+  ),
+    url("https://images.unsplash.com/photo-1556816214-fda351e4a7fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80");
+    background-size:cover;
+    background-position: center;
     opacity: 1;
 
     display: flex;
@@ -160,6 +168,8 @@ header img {
 .button-S04:hover {
     opacity: 0.8;
 }
+
+
 
 /*footer config*/
 footer {
