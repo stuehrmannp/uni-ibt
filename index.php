@@ -49,6 +49,7 @@
                 <button onclick="openPageBVB()" class="vereinsbutton button-BVB"></button>
                 
             </div>
+            <div class="big-brother-item">
             <div class="flex-item">
                 <p> Übersicht über die verfügbaren Speisen und Preise:</p>
                 <?php
@@ -157,6 +158,7 @@
                     $conn->close();
                 ?>
             </div>
+                    </div>
         </div>
         <footer>
             <p>Alle Rechte vorbehalten &copy; 2023 Internet-Basistechnologien IHK</p>
