@@ -6,18 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/style.css" type="text/css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./source/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./source/favicon-16x16.png">
     <script src="function.js"></script>
-    <title>Bundesliga Wurst Index</title>
+    <title>Bundesliga Index</title>
 </head>
 
 <body>
     <div class="flex-container">
         <header>
             <div class="logo-header">
-                <img src="./source/bundesliage-logo.png" />
+                <img src="./source/bund-logo.png" />
             </div>
             <div class="header-text">
-                <p>Der Bundesliga Index</p>
+                <p>Behalte den Überblick</p>
             </div>
         </header>
         <div class="parent">
@@ -50,7 +52,7 @@
                 
             </div>
             <div class="big-brother-item">
-            <div class="flex-item">
+            <div class="flex-item-1">
                 <p> Übersicht über die verfügbaren Speisen und Preise:</p>
                 <?php
                     
@@ -142,9 +144,9 @@
                                 echo "<tr>";
                                 echo "<td>" . $row2["platz"] . "</td>";
                                 echo "<td>" . $row2["spiele"] . "</td>";
-                                echo "<td>" . $row2["siege"] . "</td>";
+                                echo "<td class='siege'>" . $row2["siege"] . "</td>";
                                 echo "<td>" . $row2["unentschieden"] . "</td>";
-                                echo "<td>" . $row2["niederlagen"] . "</td>";
+                                echo "<td class='niederlagen'>" . $row2["niederlagen"] . "</td>";
                                 echo "<td>" . $row2["tore"] . "</td>";
                                 echo "<td>" . $row2["gegentore"] . "</td>";
                                 echo "<td>" . $row2["punkte"] . "</td>";
