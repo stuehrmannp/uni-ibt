@@ -81,6 +81,7 @@ header img {
     display: flex;
     background-color: rgba(26, 26, 26, 0.4);
     font-family: Arial, Helvetica, sans-serif;
+    padding-top: 2em;
     
 }
 /*all about searchbar und button*/
@@ -145,7 +146,7 @@ header img {
   
   .table_stat {
     display: flex;
-
+    text-align: center;
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 20px;
@@ -158,6 +159,15 @@ header img {
     text-align: left;
     background-color: #34383c;
     border-bottom: 1px solid #64686c;
+   
+  }
+
+  .header-text p {
+    font-weight: bold;
+  }
+
+  .flex-item-1 p, .flex-item p {
+    font-weight: bold;
   }
   
   .table_stat th {
@@ -175,6 +185,17 @@ header img {
     cursor: pointer;
 }
 
+.flex-item-1 {
+    flex: 1;
+    border: 1px solid rgba(0, 0, 0, 0.0);
+    color: rgb(255, 255, 255);
+    /* padding: 10px; */
+    text-align: center;
+    margin-right: 20px;
+    line-height: 1.5;
+    height: 10em;
+}
+
 
 /*parent for table*/
 .flex-item {
@@ -185,6 +206,7 @@ header img {
     text-align: center;
     margin-right: 20px;
     line-height: 1.5;
+    height: 22em;
 }
 
 /*heading in table*/
